@@ -815,8 +815,17 @@ main {
 
   .site-nav {
     width: 100%;
-    justify-content: flex-start;
-    gap: 10px 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    gap: 10px;
+  }
+
+  .site-nav a,
+  .nav-cta {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
   }
 
   .hero-simple h1 {
@@ -838,12 +847,14 @@ main {
   }
 
   .article-hero h1,
+  .featured-copy h3,
   .article-card h3,
   .article-card h4,
   .summary-card strong,
   .shop-section h2 {
-    overflow-wrap: normal;
-    word-break: keep-all;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-break: auto;
   }
 
   .content h2 {
@@ -924,8 +935,11 @@ main {
     font-size: 0.86rem;
   }
 
+  .site-nav {
+    gap: 8px;
+  }
+
   .nav-cta {
-    width: 100%;
     border-radius: 18px;
   }
 
@@ -945,6 +959,7 @@ main {
 
   .article-hero h1 {
     font-size: 1.9rem;
+    line-height: 1.28;
   }
 
   .article-block,
