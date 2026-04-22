@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>保護猫カフェ手帖</title>
+    <meta
+      name="description"
+      content="地方カテゴリから都道府県へたどれる、全国の保護猫カフェ情報サイト。47都道府県のカテゴリを一覧で確認できます。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="保護猫カフェ手帖のトップへ">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-dot"></span>
+            <span class="brand-ring"></span>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">保護猫カフェ手帖</span>
+            <span class="brand-sub">Protective Cat Cafe Guide</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="サイト内ナビゲーション">
+          <a href="#featured">おすすめ記事</a>
+          <a class="nav-cta" href="#featured">注目記事</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero-simple">
+          <p class="eyebrow">Region to Prefecture</p>
+          <h1>地方カテゴリから、都道府県ごとに保護猫カフェ情報を探せるサイト</h1>
+          <p class="hero-copy">
+            関東、近畿などの地方カテゴリを入口にして、その中に都道府県カテゴリを整理しています。
+            47都道府県を一覧で見渡しながら、探したい地域にすぐ移動できます。
+          </p>
+        </section>
+
+        <section class="main-grid">
+          <aside class="sidebar" id="regions">
+            <div class="sidebar-head">
+              <p class="section-label">Browse</p>
+              <h2>地方カテゴリ</h2>
+            </div>
+
+            <div class="region-accordion" aria-label="地方カテゴリ一覧">
+              <details class="region-group" open data-region-group="hokkaido-tohoku">
+                <summary>
+                  <span>北海道・東北</span>
+                  <span class="region-meta">7都道県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/hokkaido.html">北海道</a>
+                  <a href="./categories/aomori.html">青森県</a>
+                  <a href="./categories/iwate.html">岩手県</a>
+                  <a href="./categories/miyagi.html">宮城県</a>
+                  <a href="./categories/akita.html">秋田県</a>
+                  <a href="./categories/yamagata.html">山形県</a>
+                  <a href="./categories/fukushima.html">福島県</a>
+                </div>
+              </details>
+
+              <details class="region-group" open data-region-group="kanto">
+                <summary>
+                  <span>関東</span>
+                  <span class="region-meta">7都県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/ibaraki.html">茨城県</a>
+                  <a href="./categories/tochigi.html">栃木県</a>
+                  <a href="./categories/gunma.html">群馬県</a>
+                  <a href="./categories/saitama.html">埼玉県</a>
+                  <a href="./categories/chiba.html">千葉県</a>
+                  <a href="./categories/tokyo.html">東京都</a>
+                  <a href="./categories/kanagawa.html">神奈川県</a>
+                </div>
+              </details>
+
+              <details class="region-group" data-region-group="chubu">
+                <summary>
+                  <span>中部</span>
+                  <span class="region-meta">9県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/niigata.html">新潟県</a>
+                  <a href="./categories/toyama.html">富山県</a>
+                  <a href="./categories/ishikawa.html">石川県</a>
+                  <a href="./categories/fukui.html">福井県</a>
+                  <a href="./categories/yamanashi.html">山梨県</a>
+                  <a href="./categories/nagano.html">長野県</a>
+                  <a href="./categories/gifu.html">岐阜県</a>
+                  <a href="./categories/shizuoka.html">静岡県</a>
+                  <a href="./categories/aichi.html">愛知県</a>
+                </div>
+              </details>
+
+              <details class="region-group" open data-region-group="kinki">
+                <summary>
+                  <span>近畿</span>
+                  <span class="region-meta">7府県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/mie.html">三重県</a>
+                  <a href="./categories/shiga.html">滋賀県</a>
+                  <a href="./categories/kyoto.html">京都府</a>
+                  <a href="./categories/osaka.html">大阪府</a>
+                  <a href="./categories/hyogo.html">兵庫県</a>
+                  <a href="./categories/nara.html">奈良県</a>
+                  <a href="./categories/wakayama.html">和歌山県</a>
+                </div>
+              </details>
+
+              <details class="region-group" data-region-group="chugoku-shikoku">
+                <summary>
+                  <span>中国・四国</span>
+                  <span class="region-meta">9県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/tottori.html">鳥取県</a>
+                  <a href="./categories/shimane.html">島根県</a>
+                  <a href="./categories/okayama.html">岡山県</a>
+                  <a href="./categories/hiroshima.html">広島県</a>
+                  <a href="./categories/yamaguchi.html">山口県</a>
+                  <a href="./categories/tokushima.html">徳島県</a>
+                  <a href="./categories/kagawa.html">香川県</a>
+                  <a href="./categories/ehime.html">愛媛県</a>
+                  <a href="./categories/kochi.html">高知県</a>
+                </div>
+              </details>
+
+              <details class="region-group" data-region-group="kyushu-okinawa">
+                <summary>
+                  <span>九州・沖縄</span>
+                  <span class="region-meta">8県</span>
+                </summary>
+                <div class="region-links">
+                  <a href="./categories/fukuoka.html">福岡県</a>
+                  <a href="./categories/saga.html">佐賀県</a>
+                  <a href="./categories/nagasaki.html">長崎県</a>
+                  <a href="./categories/kumamoto.html">熊本県</a>
+                  <a href="./categories/oita.html">大分県</a>
+                  <a href="./categories/miyazaki.html">宮崎県</a>
+                  <a href="./categories/kagoshima.html">鹿児島県</a>
+                  <a href="./categories/okinawa.html">沖縄県</a>
+                </div>
+              </details>
+            </div>
+          </aside>
+
+          <section class="content" id="featured" aria-labelledby="featured-title">
+            <div class="content-head">
+              <p class="section-label">Featured Articles</p>
+              <h2 id="featured-title">おすすめ記事</h2>
+              <p class="content-copy">左の地方カテゴリから都道府県を選ぶと、カテゴリ別の記事一覧ページへ移動できます。</p>
+            </div>
+
+            <a class="featured-hero-card" href="./articles/story-tokyo-cat-guardian-tsumugi.html">
+              <div class="featured-copy">
+                <p class="region-kicker">Editor&apos;s Pick</p>
+                <h3>東京キャットガーディアンから猫を譲渡してもらった体験談</h3>
+                <p>2024年5月に大塚シェルターでつむぎを迎えた実体験を、申込みから譲渡までの流れ、最初の3日間の不安、迎えてよかったことまでまとめています。</p>
+              </div>
+              <div class="featured-tags">
+                <span>譲渡体験</span>
+                <span>大塚シェルター</span>
+                <span>YouTubeあり</span>
+              </div>
+            </a>
+
+            <section class="article-section">
+              <div class="region-header">
+                <div>
+                  <p class="region-kicker">Random Picks</p>
+                  <h3>注目の記事</h3>
+                </div>
+                <p class="region-count" data-featured-count>8 articles</p>
+              </div>
+              <div class="featured-grid" data-random-featured data-random-limit="8">
+                <a class="article-card article-card-link" href="./articles/tokyo-chiyoda-shinjuku-bunkyo.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>千代田区・新宿区・文京区の保護猫カフェまとめ</h4>
+                  <p>千代田区、新宿区、文京区の3区で保護猫と出会える施設やカフェをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>千代田区</span>
+                    <span>新宿区</span>
+                    <span>文京区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-taito.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>台東区の猫と過ごせるカフェまとめ</h4>
+                  <p>浅草、上野、谷中で、保護猫や猫たちと過ごせるカフェをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>台東区</span>
+                    <span>浅草</span>
+                    <span>上野</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-sumida-koto-shinagawa.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>墨田区・江東区・品川区の保護猫カフェまとめ</h4>
+                  <p>墨田区、江東区、品川区で保護猫と出会えるカフェ・サロンをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>墨田区</span>
+                    <span>江東区</span>
+                    <span>品川区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-meguro-ota-setagaya.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>目黒区・大田区・世田谷区の保護猫カフェまとめ</h4>
+                  <p>目黒区、大田区、世田谷区で保護猫と出会えるサロン・カフェをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>目黒区</span>
+                    <span>大田区</span>
+                    <span>世田谷区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-shibuya-nakano.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>渋谷区・中野区の保護猫カフェまとめ</h4>
+                  <p>渋谷区と中野区で、里親募集の保護猫と出会えるカフェをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>渋谷区</span>
+                    <span>中野区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-toshima-itabashi.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>豊島区・板橋区の保護猫カフェまとめ</h4>
+                  <p>豊島区と板橋区で、保護猫と出会えるカフェ・シェルター併設スペースをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>豊島区</span>
+                    <span>板橋区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-nerima-adachi.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>練馬区・足立区の保護猫カフェまとめ</h4>
+                  <p>練馬区と足立区で、保護猫や保護犬猫と出会えるカフェ・活動拠点をまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>練馬区</span>
+                    <span>足立区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokyo-katsushika-edogawa.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>葛飾区・江戸川区の保護猫カフェまとめ</h4>
+                  <p>葛飾区と江戸川区で、保護猫や保護犬猫と出会える施設・カフェをまとめました。</p>
+                  <div class="article-tags">
+                    <span>東京都</span>
+                    <span>葛飾区</span>
+                    <span>江戸川区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/chiba-chiba-city.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>千葉市の保護猫カフェまとめ</h4>
+                  <p>千葉みなと館とネコリパブリックちば店を中心に、千葉市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>千葉県</span>
+                    <span>千葉市</span>
+                    <span>千葉みなと</span>
+                    <span>土気</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/chiba-funabashi-ichikawa.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>船橋市・市川市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェ花音と猫カフェ 癒し日和 行徳店を中心に、船橋市・市川市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>千葉県</span>
+                    <span>船橋市</span>
+                    <span>市川市</span>
+                    <span>行徳</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/chiba-matsudo-kashiwa.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>松戸市・柏市の保護猫カフェまとめ</h4>
+                  <p>ろくねこ、ねこもふ、アニマルcafeけだまを中心に、松戸市・柏市で保護猫や保護犬猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>千葉県</span>
+                    <span>松戸市</span>
+                    <span>柏市</span>
+                    <span>新松戸</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kanagawa-yokohama.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>横浜市の保護猫カフェまとめ</h4>
+                  <p>馬車道、石川町、桜木町、関内、横浜駅周辺など、横浜市内で保護猫や譲渡型猫カフェと出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>神奈川県</span>
+                    <span>横浜市</span>
+                    <span>中区</span>
+                    <span>西区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kanagawa-kawasaki.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>川崎市の保護猫カフェまとめ</h4>
+                  <p>にゃんくる川崎店と小さな保護猫カフェ 香を中心に、川崎市で保護猫や譲渡型猫カフェと出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>神奈川県</span>
+                    <span>川崎市</span>
+                    <span>川崎駅</span>
+                    <span>溝の口</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kanagawa-sagamihara-yokosuka.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>相模原市・横須賀市の保護猫カフェまとめ</h4>
+                  <p>ねこてまりとCAT BOXを中心に、相模原市・横須賀市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>神奈川県</span>
+                    <span>相模原市</span>
+                    <span>横須賀市</span>
+                    <span>追浜</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kanagawa-hiratsuka-kamakura.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>平塚市・鎌倉市の保護猫カフェまとめ</h4>
+                  <p>にじのはしとくるにゃん鎌倉店を中心に、平塚市・鎌倉市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>神奈川県</span>
+                    <span>平塚市</span>
+                    <span>鎌倉市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tochigi-utsunomiya.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>宇都宮市の保護猫カフェまとめ</h4>
+                  <p>いちご農家が運営する譲渡型保護猫カフェ、ねこのいちご屋さんを紹介します。</p>
+                  <div class="article-tags">
+                    <span>栃木県</span>
+                    <span>宇都宮市</span>
+                    <span>簗瀬</span>
+                    <span>いちご</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gunma-takasaki-kiryu-shibukawa.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>高崎市・桐生市・渋川市周辺の保護猫カフェまとめ</h4>
+                  <p>バーニャ、猫のへや、Cafe L&apos;arc en chatsを中心に、群馬県内で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>群馬県</span>
+                    <span>高崎市</span>
+                    <span>桐生市</span>
+                    <span>渋川市周辺</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/saitama-saitama-koshigaya.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>さいたま市・越谷市の保護猫カフェまとめ</h4>
+                  <p>ねこかつ大宮日進店、猫のいる家やすらぎ、保護猫カフェさくらを中心に、埼玉県内で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>埼玉県</span>
+                    <span>さいたま市</span>
+                    <span>越谷市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hokkaido-sapporo.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>札幌市の保護猫カフェまとめ</h4>
+                  <p>mata×tabi、ツキネコカフェ、猫SUNCAFEを中心に、札幌市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>北海道</span>
+                    <span>札幌市</span>
+                    <span>中央区</span>
+                    <span>白石区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hokkaido-hakodate.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>函館市の保護猫カフェまとめ</h4>
+                  <p>チャチャ、ANELLA CAFE 函館店、WHISKERを中心に、函館市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>北海道</span>
+                    <span>函館市</span>
+                    <span>湯川町</span>
+                    <span>五稜郭町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hokkaido-obihiro.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>帯広市の保護猫カフェまとめ</h4>
+                  <p>NPO法人猫たちを守る十勝Wishの会が運営するCat Cafe Wishを紹介します。</p>
+                  <div class="article-tags">
+                    <span>北海道</span>
+                    <span>帯広市</span>
+                    <span>保護施設</span>
+                    <span>譲渡</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/aomori-aomori-hachinohe.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>青森市・八戸市の保護猫カフェまとめ</h4>
+                  <p>ねこガーデン、保護猫ハウスこころ、猫処またたび亭、C-ways Cat&amp;Coffeeを紹介します。</p>
+                  <div class="article-tags">
+                    <span>青森県</span>
+                    <span>青森市</span>
+                    <span>八戸市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/iwate-morioka.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>盛岡市の保護猫カフェまとめ</h4>
+                  <p>保護ねこカフェもりねこと、ドリームキャットハウス神明町を中心に、盛岡市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>岩手県</span>
+                    <span>盛岡市</span>
+                    <span>菜園</span>
+                    <span>神明町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/iwate-ichinoseki-kitakami-kamaishi.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>一関市・北上市・釜石市の猫と出会えるカフェまとめ</h4>
+                  <p>フェリスの箱庭、cafe pont chat、保護猫アンドゥを中心に、岩手県内で猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>岩手県</span>
+                    <span>一関市</span>
+                    <span>北上市</span>
+                    <span>釜石市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/miyagi-sendai.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>仙台市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェちぐら堂と、保護猫シェルター おうちにおいでを中心に、仙台市で保護猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>宮城県</span>
+                    <span>仙台市</span>
+                    <span>青葉区</span>
+                    <span>宮城野区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/miyagi-ishinomaki-kesennuma-osaki.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>石巻市・気仙沼市周辺・大崎市周辺の猫と出会えるカフェまとめ</h4>
+                  <p>猫Cafeごろにゃん、猫の巣窟、ねこあんを中心に、宮城県内で猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>宮城県</span>
+                    <span>石巻市</span>
+                    <span>南三陸町</span>
+                    <span>登米市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/akita-yurihonjo.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>由利本荘市の保護猫と出会える場所まとめ</h4>
+                  <p>保護猫と里親をつなぐCat house 柚の家を紹介します。</p>
+                  <div class="article-tags">
+                    <span>秋田県</span>
+                    <span>由利本荘市</span>
+                    <span>一番堰</span>
+                    <span>譲渡</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamagata-yamagata-tsuruoka-sagae.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>山形市・鶴岡市・寒河江市の猫と出会える場所まとめ</h4>
+                  <p>ねこコレ山形店、でずぼCafe、Peace For Pawsの保護猫活動を紹介します。</p>
+                  <div class="article-tags">
+                    <span>山形県</span>
+                    <span>山形市</span>
+                    <span>鶴岡市</span>
+                    <span>寒河江市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/fukushima-fukushima-city.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>福島市の保護猫交流スペースまとめ</h4>
+                  <p>閉店した猫カフェから保護された猫たちと出会える、ひだまりねこを紹介します。</p>
+                  <div class="article-tags">
+                    <span>福島県</span>
+                    <span>福島市</span>
+                    <span>仲間町</span>
+                    <span>譲渡</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/fukushima-koriyama.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>郡山市の保護猫カフェまとめ</h4>
+                  <p>love.lab、保護猫カフェここねこ、フクロウがいる猫カフェねこひげを紹介します。</p>
+                  <div class="article-tags">
+                    <span>福島県</span>
+                    <span>郡山市</span>
+                    <span>静町</span>
+                    <span>喜久田町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/fukushima-aizuwakamatsu.html" data-featured-card>
+                  <p class="article-region">北海道・東北</p>
+                  <h4>会津若松市の猫と出会えるカフェまとめ</h4>
+                  <p>猫茶店 會津めごねこと、保護猫カフェnecoronを紹介します。</p>
+                  <div class="article-tags">
+                    <span>福島県</span>
+                    <span>会津若松市</span>
+                    <span>大町</span>
+                    <span>中町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/niigata-niigata-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>新潟市の保護猫カフェまとめ</h4>
+                  <p>新潟市中央区で里親募集中の猫たちと過ごせる、里親さがし猫カフェおっぽを紹介します。</p>
+                  <div class="article-tags">
+                    <span>新潟県</span>
+                    <span>新潟市</span>
+                    <span>中央区</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/niigata-kenou-chuetsu.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>三条市・田上町・見附市・長岡市の猫カフェまとめ</h4>
+                  <p>らっくら家、あおねこ、ねこまち、ねこカフェ＆ねこ酒場 らてを紹介します。</p>
+                  <div class="article-tags">
+                    <span>新潟県</span>
+                    <span>三条市</span>
+                    <span>見附市</span>
+                    <span>長岡市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/niigata-joetsu.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>上越市の猫と出会える場所まとめ</h4>
+                  <p>上越市木田の猫カフェ 猫とお茶と、大潟区の保護猫ハウス 猫やなぎを紹介します。</p>
+                  <div class="article-tags">
+                    <span>新潟県</span>
+                    <span>上越市</span>
+                    <span>木田</span>
+                    <span>大潟区</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/toyama-toyama-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>富山市の保護猫カフェまとめ</h4>
+                  <p>月猫カフェと、おうち猫カフェ ねこやすみを紹介します。</p>
+                  <div class="article-tags">
+                    <span>富山県</span>
+                    <span>富山市</span>
+                    <span>中布目</span>
+                    <span>堀川本郷</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/toyama-west.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>高岡市・射水市・氷見市・砺波市の猫カフェまとめ</h4>
+                  <p>ネコのしっぽ、Dog・Cat Cafe＆Shop パウ、保護猫＆豆柴カフェ凪音、猫カフェ シャンティを紹介します。</p>
+                  <div class="article-tags">
+                    <span>富山県</span>
+                    <span>高岡市</span>
+                    <span>射水市</span>
+                    <span>氷見市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ishikawa-nonoichi-hakusan.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>野々市市・白山市の猫と出会える場所まとめ</h4>
+                  <p>保護ねこカフェ＋レトロゲーム＆漫画カフェ ねこがすきと、ののいちにゃんこのおうちを紹介します。</p>
+                  <div class="article-tags">
+                    <span>石川県</span>
+                    <span>野々市市</span>
+                    <span>白山市</span>
+                    <span>譲渡会</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ishikawa-kaga-komatsu.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>加賀市・小松市の猫と出会えるカフェまとめ</h4>
+                  <p>cafe DAMONと、ワンBOX本店内の猫専門店 ニャンBOXを紹介します。</p>
+                  <div class="article-tags">
+                    <span>石川県</span>
+                    <span>加賀市</span>
+                    <span>小松市</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/fukui-fukui-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>福井市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>しあわせにゃん家、ANELLA CAFE 福井店、猫カフェ 福ねこを紹介します。</p>
+                  <div class="article-tags">
+                    <span>福井県</span>
+                    <span>福井市</span>
+                    <span>譲渡型</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/fukui-katsuyama.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>勝山市の猫カフェまとめ</h4>
+                  <p>成猫の里親募集や猫ホテルも案内している、cat villageを紹介します。</p>
+                  <div class="article-tags">
+                    <span>福井県</span>
+                    <span>勝山市</span>
+                    <span>村岡町</span>
+                    <span>里親募集</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamanashi-kofu-showa.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>甲府市・昭和町の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>Nyan Connect、Hako bu neco 甲府昭和店、MY CAT KOFUを紹介します。</p>
+                  <div class="article-tags">
+                    <span>山梨県</span>
+                    <span>甲府市</span>
+                    <span>昭和町</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamanashi-minami-alps.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>南アルプス市の保護猫カフェ・ふれあい施設まとめ</h4>
+                  <p>にゃん茶ッてcafeと、ワンニャンふれあいルームを紹介します。</p>
+                  <div class="article-tags">
+                    <span>山梨県</span>
+                    <span>南アルプス市</span>
+                    <span>保護猫</span>
+                    <span>里親募集</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamanashi-fujikawaguchiko.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>富士河口湖町の無料保護猫カフェまとめ</h4>
+                  <p>無料の保護猫カフェ・コミュニティスペース、アトリエ高菜先生を紹介します。</p>
+                  <div class="article-tags">
+                    <span>山梨県</span>
+                    <span>富士河口湖町</span>
+                    <span>河口湖</span>
+                    <span>無料</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nagano-nagano-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>長野市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>信州猫日和、和猫本舗、ねこカフェMimiを紹介します。</p>
+                  <div class="article-tags">
+                    <span>長野県</span>
+                    <span>長野市</span>
+                    <span>保護猫</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nagano-toshin.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>上田市・御代田町の保護猫カフェまとめ</h4>
+                  <p>Cat Cafe AROと譲渡型保護猫カフェ 猫恩を紹介します。</p>
+                  <div class="article-tags">
+                    <span>長野県</span>
+                    <span>上田市</span>
+                    <span>御代田町</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nagano-matsumoto-shiojiri.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>松本市・塩尻市の保護猫カフェまとめ</h4>
+                  <p>ねこカフェもふもふと、綿半塩尻店の常設譲渡スペースを紹介します。</p>
+                  <div class="article-tags">
+                    <span>長野県</span>
+                    <span>松本市</span>
+                    <span>塩尻市</span>
+                    <span>譲渡会</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nagano-azumino-hakuba.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>安曇野市・白馬村の猫カフェまとめ</h4>
+                  <p>ねこの森、猫カフェBaron、別邸ねこ処みなみ家を紹介します。</p>
+                  <div class="article-tags">
+                    <span>長野県</span>
+                    <span>安曇野市</span>
+                    <span>白馬村</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nagano-iida.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>飯田市の保護猫活動・ふれあい施設まとめ</h4>
+                  <p>保護猫ふれあいハウス かぎしっぽと猫110番かぎしっぽの活動を紹介します。</p>
+                  <div class="article-tags">
+                    <span>長野県</span>
+                    <span>飯田市</span>
+                    <span>かぎしっぽ</span>
+                    <span>TNR</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gifu-gifu-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>岐阜市の保護猫カフェまとめ</h4>
+                  <p>猫カフェラウンジKitto、ネコリパブリック岐阜店、忍者ねこカフェ猫影を紹介します。</p>
+                  <div class="article-tags">
+                    <span>岐阜県</span>
+                    <span>岐阜市</span>
+                    <span>保護猫</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gifu-kakamigahara.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>各務原市の猫カフェまとめ</h4>
+                  <p>こねこカフェSanctuaryとCafeねこちぐらを紹介します。</p>
+                  <div class="article-tags">
+                    <span>岐阜県</span>
+                    <span>各務原市</span>
+                    <span>鵜沼</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gifu-ogaki.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>大垣市の保護猫カフェまとめ</h4>
+                  <p>猫と暮らす日常を体験できる、くつろぎ猫カフェnoraraを紹介します。</p>
+                  <div class="article-tags">
+                    <span>岐阜県</span>
+                    <span>大垣市</span>
+                    <span>西濃</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gifu-kani.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>可児市の保護猫カフェまとめ</h4>
+                  <p>moff moffとねこハウス空を紹介します。</p>
+                  <div class="article-tags">
+                    <span>岐阜県</span>
+                    <span>可児市</span>
+                    <span>下切</span>
+                    <span>譲渡</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/gifu-takayama.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>高山市の保護猫カフェ・シェルターまとめ</h4>
+                  <p>猫の月さくらやまと、開放型保護猫シェルターにゃんlivingを紹介します。</p>
+                  <div class="article-tags">
+                    <span>岐阜県</span>
+                    <span>高山市</span>
+                    <span>飛騨</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shizuoka-shizuoka-city.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>静岡市の譲渡型保護猫カフェまとめ</h4>
+                  <p>譲渡型保護ねこカフェだんろ、保護猫カフェ猫宿町、Fang for Stray Catz.を紹介します。</p>
+                  <div class="article-tags">
+                    <span>静岡県</span>
+                    <span>静岡市</span>
+                    <span>葵区</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shizuoka-hamamatsu.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>浜松市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>ANELLA CAFE 浜北 貴布祢店、暖猫、猫がいるカフェAdagioを紹介します。</p>
+                  <div class="article-tags">
+                    <span>静岡県</span>
+                    <span>浜松市</span>
+                    <span>浜名区</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shizuoka-fuji-numazu.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>富士市・沼津市の保護猫カフェまとめ</h4>
+                  <p>ANELLA CAFE 富士宇東川東町店、猫カフェ ロゼッタ、にくきゅうず、八福猫を紹介します。</p>
+                  <div class="article-tags">
+                    <span>静岡県</span>
+                    <span>富士市</span>
+                    <span>沼津市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shizuoka-fukuroi.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>袋井市の猫カフェまとめ</h4>
+                  <p>ペットスペースミルクのアニマルカフェ内にある猫カフェを紹介します。</p>
+                  <div class="article-tags">
+                    <span>静岡県</span>
+                    <span>袋井市</span>
+                    <span>猫カフェ</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shizuoka-ito.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>伊東市の猫カフェまとめ</h4>
+                  <p>伊豆高原ねこカフェにゃおんを紹介します。</p>
+                  <div class="article-tags">
+                    <span>静岡県</span>
+                    <span>伊東市</span>
+                    <span>伊豆高原</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/aichi-nagoya.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>名古屋市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェひだまり号、CATSPOT ZILLION、めおまるけ、笑猫を紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛知県</span>
+                    <span>名古屋市</span>
+                    <span>西区</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/aichi-toyota.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>豊田市の保護猫カフェ・ふれあいルームまとめ</h4>
+                  <p>とよねことNEKOTAMA-minimumを紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛知県</span>
+                    <span>豊田市</span>
+                    <span>ふれあいルーム</span>
+                    <span>TNR</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/aichi-mikawa.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>岡崎市・豊川市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェchaton、保護猫カフェAelu、保護猫カフェTormentaを紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛知県</span>
+                    <span>岡崎市</span>
+                    <span>豊川市</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/aichi-owari.html" data-featured-card>
+                  <p class="article-region">中部</p>
+                  <h4>一宮市の保護猫カフェまとめ</h4>
+                  <p>猫かふぇ ねこぱんちを紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛知県</span>
+                    <span>一宮市</span>
+                    <span>尾張</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/mie-yokkaichi.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>四日市市の保護猫カフェまとめ</h4>
+                  <p>完全予約制の保護猫カフェ猫の森を紹介します。</p>
+                  <div class="article-tags">
+                    <span>三重県</span>
+                    <span>四日市市</span>
+                    <span>北勢</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/mie-tsu.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>津市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェ285と保護ねこカフェねこ屋を紹介します。</p>
+                  <div class="article-tags">
+                    <span>三重県</span>
+                    <span>津市</span>
+                    <span>島崎町</span>
+                    <span>高茶屋</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/mie-suzuka.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>鈴鹿市の保護猫カフェ・保護猫活動まとめ</h4>
+                  <p>保護猫カフェ猫婆と、譲渡型猫カフェ閉店後のまるこ日和を紹介します。</p>
+                  <div class="article-tags">
+                    <span>三重県</span>
+                    <span>鈴鹿市</span>
+                    <span>猫婆</span>
+                    <span>里親会</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/mie-matsusaka.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>松阪市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェ＆キャットシッターかぎしっぽを紹介します。</p>
+                  <div class="article-tags">
+                    <span>三重県</span>
+                    <span>松阪市</span>
+                    <span>清生町</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shiga-otsu-kusatsu.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>大津市・草津市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>保護っ子カフェSTELLAR、ねこ日和、保護猫カフェねこのおうちを紹介します。</p>
+                  <div class="article-tags">
+                    <span>滋賀県</span>
+                    <span>大津市</span>
+                    <span>草津市</span>
+                    <span>湖南</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shiga-yasu-omihachiman.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>野洲市・近江八幡市の保護猫カフェまとめ</h4>
+                  <p>neko+cafe ニコノシッポとKururi Cafe∞を紹介します。</p>
+                  <div class="article-tags">
+                    <span>滋賀県</span>
+                    <span>野洲市</span>
+                    <span>近江八幡市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shiga-koto-kohoku.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>彦根市・長浜市・愛荘町の保護猫カフェまとめ</h4>
+                  <p>ね湖乃家、にゃんずはうす、ネコリパブリック滋賀を紹介します。</p>
+                  <div class="article-tags">
+                    <span>滋賀県</span>
+                    <span>彦根市</span>
+                    <span>長浜市</span>
+                    <span>愛荘町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kyoto-kyoto-city.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>京都市中心部の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>ANELLA CAFE 京都烏丸店、Cat's EYE、うたねこ堂を紹介します。</p>
+                  <div class="article-tags">
+                    <span>京都府</span>
+                    <span>京都市</span>
+                    <span>中京区</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kyoto-uji-kameoka.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>宇治市・亀岡市の保護猫カフェまとめ</h4>
+                  <p>ネコカフェ♡ジジと楽neko cafeを紹介します。</p>
+                  <div class="article-tags">
+                    <span>京都府</span>
+                    <span>宇治市</span>
+                    <span>亀岡市</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kyoto-nagaokakyo.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>長岡京市の保護猫活動・譲渡会まとめ</h4>
+                  <p>ねこサポ長岡京のTNR活動と保護猫譲渡会を紹介します。</p>
+                  <div class="article-tags">
+                    <span>京都府</span>
+                    <span>長岡京市</span>
+                    <span>譲渡会</span>
+                    <span>TNR</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/osaka-kita.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>大阪市北区の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>カフェウリエル、ねこのたつき、ぐるぐる堂、Cat Space、SCAT WORKS、SAVE CAT CAFEを紹介します。</p>
+                  <div class="article-tags">
+                    <span>大阪府</span>
+                    <span>大阪市北区</span>
+                    <span>梅田</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/osaka-chuo-namba.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>大阪市中央区・難波周辺の保護猫カフェまとめ</h4>
+                  <p>猫の恵庭、猫カフェ三日月、ねこ浴場、neuを紹介します。</p>
+                  <div class="article-tags">
+                    <span>大阪府</span>
+                    <span>中央区</span>
+                    <span>難波</span>
+                    <span>谷町六丁目</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/osaka-tennoji.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>大阪市天王寺区の保護猫カフェまとめ</h4>
+                  <p>ねことカフェ大阪天王寺店とジオラマ食堂天王寺を紹介します。</p>
+                  <div class="article-tags">
+                    <span>大阪府</span>
+                    <span>天王寺区</span>
+                    <span>寺田町</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hyogo-kobe.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>神戸市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>ニャーニャの森、catcafeねるこ、猫園おてて、猫の屋おでんを紹介します。</p>
+                  <div class="article-tags">
+                    <span>兵庫県</span>
+                    <span>神戸市</span>
+                    <span>岡本</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hyogo-himeji.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>姫路市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>しっぽの森、NECON、Salon de Kei、かくれ家を紹介します。</p>
+                  <div class="article-tags">
+                    <span>兵庫県</span>
+                    <span>姫路市</span>
+                    <span>保護猫</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hyogo-hanshin.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>西宮市・尼崎市の保護猫カフェまとめ</h4>
+                  <p>ANELLA CAFE西宮店、ラゾーニャ、保護猫カフェかつお、リアンを紹介します。</p>
+                  <div class="article-tags">
+                    <span>兵庫県</span>
+                    <span>西宮市</span>
+                    <span>尼崎市</span>
+                    <span>阪神間</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hyogo-akashi.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>明石市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェ・カーロと保護猫かふぇあすなろを紹介します。</p>
+                  <div class="article-tags">
+                    <span>兵庫県</span>
+                    <span>明石市</span>
+                    <span>本町</span>
+                    <span>西新町</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nara-nara-city.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>奈良市の猫カフェまとめ</h4>
+                  <p>猫喫茶 花衣とCat cafe 心猫を紹介します。</p>
+                  <div class="article-tags">
+                    <span>奈良県</span>
+                    <span>奈良市</span>
+                    <span>JR奈良</span>
+                    <span>近鉄奈良</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nara-kashihara-tenri.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>橿原市・天理市の保護猫カフェまとめ</h4>
+                  <p>保護猫Cafe Meenyaと保護猫サロンねこマンマを紹介します。</p>
+                  <div class="article-tags">
+                    <span>奈良県</span>
+                    <span>橿原市</span>
+                    <span>天理市</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/nara-ikoma-kammaki.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>生駒市・上牧町の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェDear CatとAlley Cats Sanctuary Cafeを紹介します。</p>
+                  <div class="article-tags">
+                    <span>奈良県</span>
+                    <span>生駒市</span>
+                    <span>上牧町</span>
+                    <span>完全予約制</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/wakayama-wakayama-city.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>和歌山市の保護猫カフェまとめ</h4>
+                  <p>はっぴーわんだふる、猫ちゃんの家、猫の道草、寺眠子屋を紹介します。</p>
+                  <div class="article-tags">
+                    <span>和歌山県</span>
+                    <span>和歌山市</span>
+                    <span>保護猫</span>
+                    <span>里親募集</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/wakayama-hashimoto.html" data-featured-card>
+                  <p class="article-region">近畿</p>
+                  <h4>橋本市の保護猫が暮らすカフェまとめ</h4>
+                  <p>保護猫と小型犬が暮らすNeko○cafeを紹介します。</p>
+                  <div class="article-tags">
+                    <span>和歌山県</span>
+                    <span>橋本市</span>
+                    <span>紀ノ光台</span>
+                    <span>カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tottori-tottori-city.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>鳥取市の保護猫カフェまとめ</h4>
+                  <p>保護猫カフェ・就労支援B型作業所 Wald Badenを紹介します。</p>
+                  <div class="article-tags">
+                    <span>鳥取県</span>
+                    <span>鳥取市</span>
+                    <span>富安</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tottori-yonago.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>米子市の保護猫カフェまとめ</h4>
+                  <p>皆生温泉街のNEKO CAFE Kuroを紹介します。</p>
+                  <div class="article-tags">
+                    <span>鳥取県</span>
+                    <span>米子市</span>
+                    <span>皆生温泉</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tottori-kurayoshi.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>倉吉市の保護猫活動・譲渡活動まとめ</h4>
+                  <p>一般社団法人猫じゃらしのTNR活動と譲渡活動を紹介します。</p>
+                  <div class="article-tags">
+                    <span>鳥取県</span>
+                    <span>倉吉市</span>
+                    <span>TNR</span>
+                    <span>譲渡活動</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shimane-matsue.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>松江市の保護猫カフェまとめ</h4>
+                  <p>就労継続支援B型事業所を併設する譲渡型保護猫カフェ、猫猫の森を紹介します。</p>
+                  <div class="article-tags">
+                    <span>島根県</span>
+                    <span>松江市</span>
+                    <span>下東川津町</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/shimane-izumo.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>出雲市の譲渡型保護猫カフェまとめ</h4>
+                  <p>出雲大社近くのAnimal Living いぬねこ日和を紹介します。</p>
+                  <div class="article-tags">
+                    <span>島根県</span>
+                    <span>出雲市</span>
+                    <span>大社町</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/okayama-okayama-city.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>岡山市の保護猫カフェ・保護猫活動まとめ</h4>
+                  <p>ペットのバトンカフェ岡山ルアナ店、ほごっこCAFE、BLUE CAT CAFE、HOGONEKO FARMを紹介します。</p>
+                  <div class="article-tags">
+                    <span>岡山県</span>
+                    <span>岡山市</span>
+                    <span>保護猫</span>
+                    <span>里親募集</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/okayama-kurashiki.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>倉敷市の保護犬猫カフェ・猫カフェまとめ</h4>
+                  <p>ANELLA CAFE倉敷店と猫カフェ美観nekoを紹介します。</p>
+                  <div class="article-tags">
+                    <span>岡山県</span>
+                    <span>倉敷市</span>
+                    <span>美観地区</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/okayama-tsuyama-tamano.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>津山市・玉野市周辺の動物カフェ・保護猫活動まとめ</h4>
+                  <p>動物のおうちPRAMEEと、やまねこの会の地域猫活動を紹介します。</p>
+                  <div class="article-tags">
+                    <span>岡山県</span>
+                    <span>津山市</span>
+                    <span>玉野市</span>
+                    <span>地域猫活動</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hiroshima-hiroshima-city.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>広島市の保護猫カフェ・譲渡施設まとめ</h4>
+                  <p>ネコリパブリック広島店、廣島ねこ奉行、ねこといっしょ、みんなのもりを紹介します。</p>
+                  <div class="article-tags">
+                    <span>広島県</span>
+                    <span>広島市</span>
+                    <span>中区</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hiroshima-hatsukaichi.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>廿日市市の保護猫カフェまとめ</h4>
+                  <p>古民家保護猫カフェつむぎのを紹介します。</p>
+                  <div class="article-tags">
+                    <span>広島県</span>
+                    <span>廿日市市</span>
+                    <span>古民家</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hiroshima-kure-higashihiroshima.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>呉市・東広島市の保護猫カフェ・保護活動まとめ</h4>
+                  <p>みるく、にゃんにゃんヒュッテ、にゃんEATS、アンの時間を紹介します。</p>
+                  <div class="article-tags">
+                    <span>広島県</span>
+                    <span>呉市</span>
+                    <span>東広島市</span>
+                    <span>保護犬猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/hiroshima-bingo.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>福山市・尾道市の保護猫カフェまとめ</h4>
+                  <p>Familia、COMMUNE、ねこのみち、シャー猫ハウスを紹介します。</p>
+                  <div class="article-tags">
+                    <span>広島県</span>
+                    <span>福山市</span>
+                    <span>尾道市</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamaguchi-shimonoseki.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>下関市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>Nekonowaと猫と本 Miawを紹介します。</p>
+                  <div class="article-tags">
+                    <span>山口県</span>
+                    <span>下関市</span>
+                    <span>保護猫</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamaguchi-yamaguchi-hagi-ube.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>山口市・萩市・宇部市の保護猫カフェまとめ</h4>
+                  <p>GATO、Kawaii、猫丸カフェ部を紹介します。</p>
+                  <div class="article-tags">
+                    <span>山口県</span>
+                    <span>山口市</span>
+                    <span>萩市</span>
+                    <span>宇部市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/yamaguchi-east.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>岩国市・柳井市・下松市の猫カフェまとめ</h4>
+                  <p>猫処りとや、メルという名の猫、hina cafeを紹介します。</p>
+                  <div class="article-tags">
+                    <span>山口県</span>
+                    <span>岩国市</span>
+                    <span>柳井市</span>
+                    <span>下松市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokushima-tokushima-city.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>徳島市の保護猫カフェ・譲渡拠点まとめ</h4>
+                  <p>KATBOSとあわねこ保育園を紹介します。</p>
+                  <div class="article-tags">
+                    <span>徳島県</span>
+                    <span>徳島市</span>
+                    <span>福島</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/tokushima-yoshinogawa.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>吉野川市の保護猫スペースまとめ</h4>
+                  <p>vivi hairsalon x hogonekoを紹介します。</p>
+                  <div class="article-tags">
+                    <span>徳島県</span>
+                    <span>吉野川市</span>
+                    <span>鴨島町</span>
+                    <span>美容室</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kagawa-takamatsu.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>高松市の保護猫カフェ・猫カフェまとめ</h4>
+                  <p>catloaf、Pato'sCafe、肉灸を紹介します。</p>
+                  <div class="article-tags">
+                    <span>香川県</span>
+                    <span>高松市</span>
+                    <span>保護猫</span>
+                    <span>猫カフェ</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kagawa-chusan.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>丸亀市・多度津町・坂出市の保護犬猫カフェまとめ</h4>
+                  <p>ANELLA CAFE、necobokko CAFE、本町一丁目カフェを紹介します。</p>
+                  <div class="article-tags">
+                    <span>香川県</span>
+                    <span>丸亀市</span>
+                    <span>多度津町</span>
+                    <span>坂出市</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kagawa-mitoyo.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>三豊市の猫と過ごせる古民家カフェまとめ</h4>
+                  <p>そらまめの家を紹介します。</p>
+                  <div class="article-tags">
+                    <span>香川県</span>
+                    <span>三豊市</span>
+                    <span>古民家</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ehime-matsuyama.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>松山市の保護猫カフェまとめ</h4>
+                  <p>Nyacotto、猫カフェnoa、ひめねこを紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛媛県</span>
+                    <span>松山市</span>
+                    <span>保護猫</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ehime-shikokuchuo.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>四国中央市の保護猫カフェ・譲渡施設まとめ</h4>
+                  <p>森の妖精と猫を紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛媛県</span>
+                    <span>四国中央市</span>
+                    <span>三島中央</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ehime-uwajima.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>宇和島市の保護猫シェルターまとめ</h4>
+                  <p>保護猫シェルター＆猫雑貨NEKOSUKIを紹介します。</p>
+                  <div class="article-tags">
+                    <span>愛媛県</span>
+                    <span>宇和島市</span>
+                    <span>譲渡会</span>
+                    <span>猫雑貨</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kochi-kochi-city-nankoku.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>高知市・南国市の保護猫カフェ・譲渡スペースまとめ</h4>
+                  <p>moco moco、にゃんこTo、OUENspaceを紹介します。</p>
+                  <div class="article-tags">
+                    <span>高知県</span>
+                    <span>高知市</span>
+                    <span>南国市</span>
+                    <span>保護猫</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/kochi-hidaka-kami.html" data-featured-card>
+                  <p class="article-region">中国・四国</p>
+                  <h4>日高村・香美市の保護猫カフェまとめ</h4>
+                  <p>にゃんこメリーとひがな猫・プチプチネコネコを紹介します。</p>
+                  <div class="article-tags">
+                    <span>高知県</span>
+                    <span>日高村</span>
+                    <span>香美市</span>
+                    <span>里親募集</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+                <a class="article-card article-card-link" href="./articles/ibaraki-mito-tsuchiura.html" data-featured-card>
+                  <p class="article-region">関東</p>
+                  <h4>水戸市・土浦市の保護猫カフェまとめ</h4>
+                  <p>Smile to HeartとANELLA CAFE 土浦店を中心に、水戸市・土浦市で保護猫や保護犬猫と出会える場所をまとめました。</p>
+                  <div class="article-tags">
+                    <span>茨城県</span>
+                    <span>水戸市</span>
+                    <span>土浦市</span>
+                    <span>譲渡型</span>
+                  </div>
+                  <span class="card-arrow" aria-hidden="true">記事を読む</span>
+                </a>
+              </div>
+            </section>
+          </section>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>保護猫カフェ手帖</p>
+        <p>地方カテゴリから都道府県カテゴリへたどれる、全国の保護猫カフェ情報サイトです。</p>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const grid = document.querySelector("[data-random-featured]");
+        if (!grid) return;
+
+        const cards = Array.from(grid.querySelectorAll("[data-featured-card]"));
+        const limit = Math.min(Number(grid.dataset.randomLimit) || 8, cards.length);
+
+        for (let index = cards.length - 1; index > 0; index -= 1) {
+          const randomIndex = Math.floor(Math.random() * (index + 1));
+          [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
+        }
+
+        const selectedCards = cards.slice(0, limit);
+        grid.replaceChildren(...selectedCards);
+
+        const count = document.querySelector("[data-featured-count]");
+        if (count) count.textContent = `${limit} articles`;
+      })();
+    </script>
+  </body>
+</html>

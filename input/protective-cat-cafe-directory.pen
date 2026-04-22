@@ -1,0 +1,909 @@
+{
+  "version": "2.10",
+  "variables": {
+    "color.accent": { "type": "color", "value": "#6E8F6A" },
+    "color.accentSoft": { "type": "color", "value": "#E5EFE3" },
+    "color.bg": { "type": "color", "value": "#F7F4EE" },
+    "color.line": { "type": "color", "value": "#DED5C9" },
+    "color.surface": { "type": "color", "value": "#FFFDFC" },
+    "color.surfaceMuted": { "type": "color", "value": "#F1ECE3" },
+    "color.text": { "type": "color", "value": "#2E2A26" },
+    "color.textMuted": { "type": "color", "value": "#756D65" },
+    "color.warm": { "type": "color", "value": "#EAD8BF" },
+    "font.body": { "type": "string", "value": "Geist" },
+    "font.heading": { "type": "string", "value": "Newsreader" },
+    "radius.12": { "type": "number", "value": 12 },
+    "radius.20": { "type": "number", "value": 20 },
+    "space.12": { "type": "number", "value": 12 },
+    "space.16": { "type": "number", "value": 16 },
+    "space.24": { "type": "number", "value": 24 },
+    "space.32": { "type": "number", "value": 32 },
+    "space.48": { "type": "number", "value": 48 }
+  },
+  "children": [
+    {
+      "id": "bi8Au",
+      "name": "Protective Cat Cafe Directory",
+      "type": "frame",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "layout": "vertical",
+      "alignItems": "center",
+      "gap": 40,
+      "padding": [24, 0, 80, 0],
+      "clip": true,
+      "fill": "$color.bg",
+      "children": [
+        {
+          "id": "mF93v",
+          "name": "Header",
+          "type": "frame",
+          "width": 1280,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "padding": [20, 24],
+          "cornerRadius": "$radius.20",
+          "fill": "$color.surface",
+          "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+          "children": [
+            {
+              "id": "Ja7W6",
+              "name": "brandWrap",
+              "type": "frame",
+              "alignItems": "center",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "ZSAIG",
+                  "name": "brandDot",
+                  "type": "ellipse",
+                  "width": 14,
+                  "height": 14,
+                  "fill": "$color.accent"
+                },
+                {
+                  "id": "jBYDI",
+                  "name": "brand",
+                  "type": "text",
+                  "content": "保護猫カフェ手帖",
+                  "fontFamily": "$font.heading",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "fill": "$color.text"
+                }
+              ]
+            },
+            {
+              "id": "h0ixq",
+              "name": "nav",
+              "type": "frame",
+              "alignItems": "center",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "HRKnw",
+                  "name": "nav1",
+                  "type": "text",
+                  "content": "都道府県から探す",
+                  "fontFamily": "$font.body",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "Le5w0",
+                  "name": "nav2",
+                  "type": "text",
+                  "content": "地区の記事一覧",
+                  "fontFamily": "$font.body",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "VhIEd",
+                  "name": "nav3",
+                  "type": "text",
+                  "content": "保護猫カフェについて",
+                  "fontFamily": "$font.body",
+                  "fontSize": 15,
+                  "fontWeight": "normal",
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "mtpnG",
+                  "name": "cta",
+                  "type": "frame",
+                  "alignItems": "center",
+                  "padding": [12, 18],
+                  "cornerRadius": 999,
+                  "fill": "$color.accent",
+                  "children": [
+                    {
+                      "id": "g1xeG",
+                      "name": "ctaText",
+                      "type": "text",
+                      "content": "お気に入りを保存",
+                      "fontFamily": "$font.body",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "FjSTH",
+          "name": "Hero",
+          "type": "frame",
+          "width": 1280,
+          "gap": 24,
+          "children": [
+            {
+              "id": "2y21z",
+              "name": "heroLeft",
+              "type": "frame",
+              "layout": "vertical",
+              "width": 780,
+              "gap": 24,
+              "padding": [44, 40],
+              "cornerRadius": 28,
+              "fill": {
+                "type": "gradient",
+                "enabled": true,
+                "gradientType": "linear",
+                "rotation": 120,
+                "size": { "height": 1 },
+                "colors": [
+                  { "color": "#FFFDFC", "position": 0 },
+                  { "color": "#F1ECE3", "position": 1 }
+                ]
+              },
+              "children": [
+                {
+                  "id": "pCqOx",
+                  "name": "eyebrow",
+                  "type": "text",
+                  "content": "全国の保護猫カフェを、やさしく探せる。",
+                  "fontFamily": "$font.body",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "fill": "$color.accent"
+                },
+                {
+                  "id": "7lFG9",
+                  "name": "heroHeading",
+                  "type": "text",
+                  "content": "都道府県ごとに整理された、保護猫カフェ情報のためのシンプルな案内サイト",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "fontFamily": "$font.heading",
+                  "fontSize": 56,
+                  "fontWeight": "600",
+                  "lineHeight": 1.05,
+                  "fill": "$color.text"
+                },
+                {
+                  "id": "5vgoC",
+                  "name": "heroDesc",
+                  "type": "text",
+                  "content": "保護猫と出会えるカフェを、都道府県カテゴリと地区別の記事で見やすく整理。営業情報だけでなく、譲渡方針や猫たちの雰囲気まで記事形式でたどれます。",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "fontFamily": "$font.body",
+                  "fontSize": 18,
+                  "fontWeight": "normal",
+                  "lineHeight": 1.6,
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "ngD3s",
+                  "name": "heroMeta",
+                  "type": "frame",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "id": "IbANE",
+                      "name": "meta1",
+                      "type": "frame",
+                      "padding": [10, 14],
+                      "cornerRadius": 999,
+                      "fill": "$color.surface",
+                      "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+                      "children": [
+                        {
+                          "id": "tRw4F",
+                          "name": "meta1Text",
+                          "type": "text",
+                          "content": "47都道府県カテゴリ",
+                          "fontFamily": "$font.body",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "MUhBz",
+                      "name": "meta2",
+                      "type": "frame",
+                      "padding": [10, 14],
+                      "cornerRadius": 999,
+                      "fill": "$color.surface",
+                      "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+                      "children": [
+                        {
+                          "id": "lhLCo",
+                          "name": "meta2Text",
+                          "type": "text",
+                          "content": "地区ごとの記事一覧",
+                          "fontFamily": "$font.body",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5XH9F",
+              "name": "heroRight",
+              "type": "frame",
+              "layout": "vertical",
+              "width": "fill_container",
+              "gap": 16,
+              "padding": 28,
+              "cornerRadius": 28,
+              "fill": "$color.surface",
+              "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+              "children": [
+                {
+                  "id": "SLw3E",
+                  "name": "panelTitle",
+                  "type": "text",
+                  "content": "見つけやすい構造",
+                  "fontFamily": "$font.heading",
+                  "fontSize": 32,
+                  "fontWeight": "600",
+                  "fill": "$color.text"
+                },
+                {
+                  "id": "fvNs1",
+                  "name": "panelCard",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "height": "fit_content(0)",
+                  "gap": 14,
+                  "padding": 20,
+                  "cornerRadius": 20,
+                  "fill": "$color.accentSoft"
+                },
+                {
+                  "id": "xhXax",
+                  "name": "panelIntro",
+                  "type": "text",
+                  "content": "都道府県カテゴリから入り、地区ごとの記事で比較。はじめての来店前に確認したい要素が流れで読めます。",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal",
+                  "lineHeight": 1.6,
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "Tt6OS",
+                  "name": "panelList",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "id": "KVy3f",
+                      "name": "list1",
+                      "type": "text",
+                      "content": "01  都道府県別の入口で迷わない",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "Ubxfs",
+                      "name": "list2",
+                      "type": "text",
+                      "content": "02  地区の記事から近所の候補を探せる",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "kLfTI",
+                      "name": "list3",
+                      "type": "text",
+                      "content": "03  それぞれのカフェの雰囲気を短く把握できる",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500",
+                      "fill": "$color.text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "IJb9s",
+          "name": "Main Content",
+          "type": "frame",
+          "width": 1280,
+          "gap": 24,
+          "children": [
+            {
+              "id": "06vyd",
+              "name": "sidebar",
+              "type": "frame",
+              "layout": "vertical",
+              "width": 280,
+              "gap": 16,
+              "padding": 24,
+              "cornerRadius": 24,
+              "fill": "$color.surface",
+              "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+              "children": [
+                {
+                  "id": "QUIEt",
+                  "name": "sideTitle",
+                  "type": "text",
+                  "content": "都道府県カテゴリ",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 28,
+                  "fontWeight": "600",
+                  "fill": "$color.text"
+                },
+                {
+                  "id": "gb77O",
+                  "name": "sideDesc",
+                  "type": "text",
+                  "content": "気になるエリアから入口を選び、地区の記事へ進む構成です。",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal",
+                  "lineHeight": 1.6,
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "XcePd",
+                  "name": "chipGroup",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "id": "BwUzg",
+                      "name": "chip1",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "padding": [12, 14],
+                      "cornerRadius": 16,
+                      "fill": "$color.accentSoft",
+                      "children": [
+                        {
+                          "id": "X86Y9",
+                          "name": "chip1Text",
+                          "type": "text",
+                          "content": "東京都",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "4wePT",
+                      "name": "chip2",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "padding": [12, 14],
+                      "cornerRadius": 16,
+                      "fill": "$color.surfaceMuted",
+                      "children": [
+                        {
+                          "id": "YcJQN",
+                          "name": "chip2Text",
+                          "type": "text",
+                          "content": "神奈川県",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "q0iCC",
+                      "name": "chip3",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "padding": [12, 14],
+                      "cornerRadius": 16,
+                      "fill": "$color.surfaceMuted",
+                      "children": [
+                        {
+                          "id": "4HO7P",
+                          "name": "chip3Text",
+                          "type": "text",
+                          "content": "大阪府",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "IshDH",
+                      "name": "chip4",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "padding": [12, 14],
+                      "cornerRadius": 16,
+                      "fill": "$color.surfaceMuted",
+                      "children": [
+                        {
+                          "id": "emXP9",
+                          "name": "chip4Text",
+                          "type": "text",
+                          "content": "福岡県",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500",
+                          "fill": "$color.text"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "PtZz6",
+                  "name": "sidebarNote",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 8,
+                  "padding": 16,
+                  "cornerRadius": 18,
+                  "fill": "$color.bg",
+                  "children": [
+                    {
+                      "id": "PAUtf",
+                      "name": "sidebarNoteTitle",
+                      "type": "text",
+                      "content": "掲載情報の見方",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "MooNN",
+                      "name": "sidebarNoteBody",
+                      "type": "text",
+                      "content": "営業日、譲渡条件、猫との距離感など、記事ごとに見たい観点をそろえて掲載する想定です。",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "lineHeight": 1.6,
+                      "fill": "$color.textMuted"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hUVRA",
+              "name": "content",
+              "type": "frame",
+              "layout": "vertical",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "qvdBq",
+                  "name": "contentTitle",
+                  "type": "text",
+                  "content": "地区ごとの記事一覧",
+                  "fontFamily": "Playfair Display",
+                  "fontSize": 38,
+                  "fontWeight": "600",
+                  "fill": "$color.text"
+                },
+                {
+                  "id": "HGCyr",
+                  "name": "contentDesc",
+                  "type": "text",
+                  "content": "各都道府県の下に、主要エリアごとの記事カードを配置。記事を増やしても同じルールで拡張できます。",
+                  "textGrowth": "fixed-width",
+                  "width": 720,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal",
+                  "lineHeight": 1.7,
+                  "fill": "$color.textMuted"
+                },
+                {
+                  "id": "5WaBY",
+                  "name": "section1",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "padding": 24,
+                  "cornerRadius": 24,
+                  "fill": "$color.surface",
+                  "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+                  "children": [
+                    {
+                      "id": "RSOfz",
+                      "name": "section1Title",
+                      "type": "text",
+                      "content": "東京都",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "stbJH",
+                      "name": "articles1",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "id": "QdbLY",
+                          "name": "art1",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "e4LbH",
+                              "name": "art1Area",
+                              "type": "text",
+                              "content": "渋谷・恵比寿",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "xXKcA",
+                              "name": "art1Body",
+                              "type": "text",
+                              "content": "譲渡相談もしやすい、はじめて向けの保護猫カフェ3選",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "QeR3x",
+                          "name": "art2",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "xPHlw",
+                              "name": "art2Area",
+                              "type": "text",
+                              "content": "吉祥寺・三鷹",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "4iZU6",
+                              "name": "art2Body",
+                              "type": "text",
+                              "content": "静かに過ごせる空間を中心にまとめた地区別ガイド",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "14T0i",
+                  "name": "section2",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "padding": 24,
+                  "cornerRadius": 24,
+                  "fill": "$color.surface",
+                  "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+                  "children": [
+                    {
+                      "id": "fT2tc",
+                      "name": "section2Title",
+                      "type": "text",
+                      "content": "神奈川県",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "FZq0F",
+                      "name": "articles2",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "id": "OQqjM",
+                          "name": "art3",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "S529V",
+                              "name": "art3Area",
+                              "type": "text",
+                              "content": "横浜駅周辺",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "ht8uY",
+                              "name": "art3Body",
+                              "type": "text",
+                              "content": "アクセス重視で回りやすい保護猫カフェのまとめ記事",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "BZCKZ",
+                          "name": "art4",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "kbF4z",
+                              "name": "art4Area",
+                              "type": "text",
+                              "content": "鎌倉・湘南",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "Bzy8k",
+                              "name": "art4Body",
+                              "type": "text",
+                              "content": "観光の途中でも立ち寄りやすい、落ち着いた店舗を紹介",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "NgSbu",
+                  "name": "section3",
+                  "type": "frame",
+                  "layout": "vertical",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "padding": 24,
+                  "cornerRadius": 24,
+                  "fill": "$color.surface",
+                  "stroke": { "align": "inside", "fill": "$color.line", "thickness": 1 },
+                  "children": [
+                    {
+                      "id": "JfJdT",
+                      "name": "section3Title",
+                      "type": "text",
+                      "content": "大阪府",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 30,
+                      "fontWeight": "600",
+                      "fill": "$color.text"
+                    },
+                    {
+                      "id": "KKmZK",
+                      "name": "articles3",
+                      "type": "frame",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "id": "0a259",
+                          "name": "art5",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "WqjiY",
+                              "name": "art5Area",
+                              "type": "text",
+                              "content": "梅田・中津",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "CZszp",
+                              "name": "art5Body",
+                              "type": "text",
+                              "content": "仕事帰りにも寄りやすい営業時間の店舗を中心に掲載",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "M3utw",
+                          "name": "art6",
+                          "type": "frame",
+                          "layout": "vertical",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "padding": 18,
+                          "cornerRadius": 18,
+                          "fill": "$color.bg",
+                          "children": [
+                            {
+                              "id": "AwqE0",
+                              "name": "art6Area",
+                              "type": "text",
+                              "content": "天王寺・阿倍野",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500",
+                              "fill": "$color.accent"
+                            },
+                            {
+                              "id": "X72Fo",
+                              "name": "art6Body",
+                              "type": "text",
+                              "content": "家族連れでも入りやすい雰囲気を軸に選ぶ地区別ガイド",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "500",
+                              "lineHeight": 1.5,
+                              "fill": "$color.text"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "JguPZ",
+          "name": "footer",
+          "type": "frame",
+          "width": 1280,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "padding": [18, 8],
+          "stroke": {
+            "align": "inside",
+            "fill": "$color.line",
+            "thickness": { "top": 1 }
+          },
+          "children": [
+            {
+              "id": "dNPvp",
+              "name": "footerLeft",
+              "type": "text",
+              "content": "Protective Cat Cafe Directory / 全国の保護猫カフェ情報サイト",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "fill": "$color.textMuted"
+            },
+            {
+              "id": "X8jOe",
+              "name": "footerRight",
+              "type": "text",
+              "content": "都道府県 > 地区 > 記事 の3階層で設計",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal",
+              "fill": "$color.textMuted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
