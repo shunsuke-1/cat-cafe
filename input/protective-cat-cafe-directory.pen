@@ -66,7 +66,7 @@
                   "id": "jBYDI",
                   "name": "brand",
                   "type": "text",
-                  "content": "保護猫カフェ手帖",
+                  "content": "保護猫の世界",
                   "fontFamily": "$font.heading",
                   "fontSize": 28,
                   "fontWeight": "600",
