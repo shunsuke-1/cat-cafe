@@ -683,6 +683,69 @@ main {
   text-underline-offset: 3px;
 }
 
+.info-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.info-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+}
+
+.info-table caption {
+  padding: 16px 18px 10px;
+  color: var(--heading);
+  font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.info-table th,
+.info-table td {
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+}
+
+.info-table th {
+  width: 180px;
+  color: var(--heading);
+  font-weight: 700;
+  background: rgba(242, 236, 228, 0.55);
+}
+
+.info-table td {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .info-table {
+    min-width: 0;
+  }
+
+  .info-table caption {
+    padding: 14px 14px 8px;
+    font-size: 0.95rem;
+  }
+
+  .info-table th,
+  .info-table td {
+    padding: 12px 14px;
+    font-size: 0.94rem;
+  }
+
+  .info-table th {
+    width: 124px;
+  }
+}
+
 .article-photo {
   display: grid;
   gap: 10px;
